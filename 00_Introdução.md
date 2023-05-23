@@ -38,6 +38,8 @@ dados eram então anotados nessas fichas, que eram a maneira de
 se guardar as informações de clientes, pacientes, estudantes, peças numa oficina mecânica, etc..
 
 **Exemplo de ficha cadastral:**
+
+
 ![](https://i.imgur.com/Sj7yL8T.png)
 
 Quando era necessário saber o número de telefone de um
@@ -107,4 +109,8 @@ Existem vários tipos de bancos de dados (hierárquico,
 orientado ao objeto, em redes), nós utilizaremos nesse curso um
 SGBD Relacional, o MySQL.
 
-Exemplo de uma tabela de um Banco de Dados Relacional:
+**Exemplo de uma tabela de um Banco de Dados Relacional:**
+
+![](https://i.imgur.com/zHEExYY.png)
+
+
