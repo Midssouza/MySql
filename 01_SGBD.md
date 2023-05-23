@@ -1,4 +1,4 @@
-### Sistema de Gerenciamento de Banco de Dados?
+##  Sistema de Gerenciamento de Banco de Dados?
 
 Um SGBD - Sistema de Gerenciamento de Banco de Dados é
 uma coleção de programas que permitem ao usuário definir,
@@ -61,3 +61,49 @@ SGBD Relacional, o MySQL.
 **Exemplo de uma tabela de um Banco de Dados Relacional:**
 
 ![](https://i.imgur.com/zHEExYY.png)
+
+
+## Quem utiliza os Banco de Dados?
+
+###### USUÁRIOS
+Para um grande banco de dados, existe um grande número
+de pessoas envolvidas, desde o projeto, uso até manutenção.
+
+###### ADMINISTRADOR DE BANCO DE DADOS (DBA)
+Em um ambiente de banco de dados, o recurso primário é o
+banco de dados por si só e o recurso secundário é o SGBD e ossoftwares relacionados. A administração destes recursos cabe ao
+Administrador de Banco de Dados, o qual é responsável pela
+autorização de acesso ao banco de dados e pela coordenação e
+monitoração de seu uso.
+
+###### PROJETISTA DE BANCO DE DADOS
+
+O Projetista de Banco de Dados é responsável pela
+identificação dos dados que devem ser armazenados no banco de
+dados, escolhendo a estrutura correta para representar e armazenar
+dados. Muitas vezes, os projetistas de banco de dados atuam como
+"staff" do DBA, assumindo outras responsabilidades após a
+construção do banco de dados. É função do projetista também
+avaliar as necessidades de cada grupo de usuários.
+
+###### USUÁRIOS FINAIS
+
+Existem basicamente três categorias de usuários finais que
+são os usuários finais do banco de dados, fazendo consultas,
+atualizações e gerando documentos:
+
+• usuários casuais: acessam o banco de dados casualmente,
+mas que podem necessitar de diferentes informações a cada
+acesso; utilizam sofisticadas linguagens de consulta para
+especificar suas necessidades;
+• usuários novatos ou paramétricos: utilizam porções prédefinidas do banco de dados, utilizando consultas preestabelecidas
+que já foram exaustivamente testadas;
+• usuários sofisticados: são usuários que estão familiarizados
+com o SGBD e realizam consultas complexas.
+
+
+###### ANALISTAS DE SISTEMAS E PROGRAMADORES DE APLICAÇÕES
+Os analistas determinam os requisitos dos usuários finais e
+desenvolvem especificações para transações que atendam estes
+requisitos, e os programadores implementam estas especificações como programas, testando, depurando, documentando e dando manutenção no mesmo. É importante que, tanto analistas quanto
+programadores, estejam a par dos recursos oferecidos pelo SGBD.

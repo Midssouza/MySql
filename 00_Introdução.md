@@ -49,5 +49,3 @@ Atualmente os bancos de dados estão por toda parte, desde a
 farmácia da esquina até a lojinha do posto de gasolina.
 
 
-
-
