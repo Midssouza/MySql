@@ -29,21 +29,22 @@ como utilizá-los.
 tabelas num banco de dados.
 
 Sintaxe:
-**CREATE DATABASE** < nome_db >;
-onde:
+**CREATE DATABASE** < nome_db >; <br>
+onde:,<br>
 **nome_db**: indica o nome do Banco de Dados a ser criado.
 
 Exemplo:
+
 **CREATE DATABASE** curso;
 
 Sintaxe:
 
-**CREATE TABLE** < nome_tabela > (
-nome_atributo1 < tipo > [ NOT NULL ],
-nome_atributo2 < tipo > [ NOT NULL ],
- ......
-nome_atributoN < tipo > [ NOT NULL ]
-**PRIMARY KEY**(nome_atributo)
+**CREATE TABLE** < nome_tabela > (<br>
+nome_atributo1 < tipo > [ NOT NULL ],<br>
+nome_atributo2 < tipo > [ NOT NULL ],<br>
+ ......<br>
+nome_atributoN < tipo > [ NOT NULL ]<br>
+**PRIMARY KEY**(nome_atributo)<br>
 ) ;
 
 onde:
@@ -59,22 +60,21 @@ com uma **PRIMARY KEY** já existente ele emitirá uma mensagem
 de erro e impedirá que o registro seja inserido.
 
 Exemplo:
-**CREATE table** alunos(
-codigo int NOT NULL AUTO_INCREMENT,
-nome VARCHAR(20) NOT NULL ,
-telefone CHAR(8) NOT NULL,
-PRIMARY KEY(codigo)
+**CREATE table** alunos(<br>
+codigo int NOT NULL AUTO_INCREMENT,<br>
+nome VARCHAR(20) NOT NULL ,<br>
+telefone CHAR(8) NOT NULL,<br>
+PRIMARY KEY(codigo)<br>
 );
 Criação de uma tabela em um banco de dados à partir da
 tabela dada (o asterísco determina qual campo é a chave primária):
 
 ![](https://i.imgur.com/aOc0xXK.png)
 
-**CREATE TABLE** estudantes(
-numerocadastro int NOT NULL auto_increment,
-nome varchar(35) not null,
-turma int,
-primary key(numerocadastro)
+**CREATE TABLE** estudantes(<br>
+numerocadastro int NOT NULL auto_increment,<br>
+nome varchar(35) not null,<br>
+primary key(numerocadastro)<br>
 );
 
 **COMANDO DROP**
@@ -83,14 +83,80 @@ referências ou um banco de dados existente:
 
 Sintaxe:
 
-DROP TABLE < nome_tabela > ;
-<br>
-DROP DATABASE <nome_banco_de_dados>;
+**DROP TABLE** < nome_tabela > ;<br>
+
+**DROP DATABASE** <nome_banco_de_dados>;
 
 Exemplo:
-DROP TABLE alunos; <br>
-DROP DATABASE curso;<br>
-DROP TABLE estudantes;
+
+**DROP TABLE** alunos; <br>
+**DROP DATABASE** curso;<br>
+**DROP TABLE** estudantes;
+
+**COMANDO ALTER**
+
+Este comando permite inserir/eliminar atributos nas tabelas já
+existentes.
+
+Sintaxe:
+
+**ALTER TABLE** < nome_tabela > ADD / DROP (<br>
+nome_atributo1 < tipo > [ NOT NULL ],<br>
+nome_atributoN < tipo > [ NOT NULL ]<br>
+) ;
+
+### Manipulando dados das tabelas
+
+**COMANDO SELECT**
+
+Realiza uma seleção de informações existentes nas tabelas.
+Sintaxe básica:
+**SELECT*  [DISTINCT] expressao [AS nome-atributo]<br>
+[FROM from-lista]<br>
+[WHERE condicao]<br>
+[ORDER BY attr_name1 [ASC | DESC ]]<br>
+
+onde:
+
+**DISTINCT**: Elimina linhas duplicadas na seleção.
+expressao: Define os dados que queremos selecionar,
+normalmente uma ou mais colunas de uma tabela que está em
+from-lista.
+AS nome-atributo: Define um alias (apelido) para o nome da
+coluna.
+**FROM**: Lista das tabelas onde a pesquisa será feita.
+**WHERE**: Condição para que um registro seja selecionado.
+**ORDER BY**: Critério para ordenação dos registros
+selecionados. Utilizando ASC a ordem será crescente, utilizando
+**DESC** a ordem será decrescente.
+Where como base das Restrição de linhas.
+A cláusula "where" restringe a seleção de dados, de acordo
+com seu argumento. Contém a condição que as linhas devem
+obedecer a fim de serem listadas.
+Ela pode comparar valores em colunas, literais, expressões
+aritméticas ou funções.
+
+A seguir apresentamos operadores lógicos e complementares
+a serem utilizados nas expressões apresentadas em where.
+Operadores lógicos
 
 
+###### Operadores lógicos
+
+ ![](https://i.imgur.com/eIsD2VT.png)
+
+Exemplos:
+
+**SELECT** cidade, estado FROM brasil WHERE populacao >
+100000;
+
+Selecionará os campos cidade e estado da tabela brasil de
+todos os registros que tiverem valor maior que 100.000 no campo
+populacao.
+**SELECT * FROM**cidadao ORDER BY nome DESC;
+
+Selecionará todos os campos da tabela cidadao e utilizará
+ordenação decrescente na seleção.
+Levando em conta a tabela funcionarios abaixo, veja a
+utilização da cláusula SELECT
 
