@@ -35,3 +35,61 @@ onde:
 
 Exemplo:
 **CREATE DATABASE** curso;
+
+Sintaxe:
+
+**CREATE TABLE** < nome_tabela > (
+nome_atributo1 < tipo > [ NOT NULL ],
+nome_atributo2 < tipo > [ NOT NULL ],
+ ......
+nome_atributoN < tipo > [ NOT NULL ]
+**PRIMARY KEY**(nome_atributo)
+) ;
+
+onde:
+nome_tabela: indica o nome da tabela a ser criada.
+nome_atributo: indica o nome do campo a ser criado na tabela.
+tipo: indica a definição do tipo de atributo ( integer(n), char(n),
+... ).
+
+**PRIMARY KEY**: esse é o campo utilizado para que não exista
+na tabela dois registros iguais. Ele mantém a integridade do banco
+de dados. Caso você tente inserir num banco de dados um registro
+com uma **PRIMARY KEY** já existente ele emitirá uma mensagem
+de erro e impedirá que o registro seja inserido.
+
+Exemplo:
+**CREATE table** alunos(
+codigo int NOT NULL AUTO_INCREMENT,
+nome VARCHAR(20) NOT NULL ,
+telefone CHAR(8) NOT NULL,
+PRIMARY KEY(codigo)
+);
+Criação de uma tabela em um banco de dados à partir da
+tabela dada (o asterísco determina qual campo é a chave primária):
+
+![](https://i.imgur.com/aOc0xXK.png)
+
+**CREATE TABLE** estudantes(
+numerocadastro int NOT NULL auto_increment,
+nome varchar(35) not null,
+turma int,
+primary key(numerocadastro)
+);
+
+**COMANDO DROP**
+Este comando elimina a definição da tabela, seus dados e
+referências ou um banco de dados existente:
+
+Sintaxe:
+
+DROP TABLE < nome_tabela > ;
+DROP DATABASE <nome_banco_de_dados>;
+
+Exemplo:
+DROP TABLE alunos;
+DROP DATABASE curso;
+DROP TABLE estudantes;
+
+
+
