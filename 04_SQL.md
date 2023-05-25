@@ -84,11 +84,12 @@ referências ou um banco de dados existente:
 Sintaxe:
 
 DROP TABLE < nome_tabela > ;
+<br>
 DROP DATABASE <nome_banco_de_dados>;
 
 Exemplo:
-DROP TABLE alunos;
-DROP DATABASE curso;
+DROP TABLE alunos; <br>
+DROP DATABASE curso;<br>
 DROP TABLE estudantes;
 
 
