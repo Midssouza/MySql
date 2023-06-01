@@ -141,7 +141,7 @@ a serem utilizados nas expressões apresentadas em where.
 Operadores lógicos
 
 
-###### Operadores lógicos
+### Operadores lógicos
 
  ![](https://i.imgur.com/eIsD2VT.png)
 
@@ -157,6 +157,35 @@ populacao.
 
 Selecionará todos os campos da tabela cidadao e utilizará
 ordenação decrescente na seleção.
-Levando em conta a tabela funcionarios abaixo, veja a
-utilização da cláusula SELECT
 
+Levando em conta a tabela funcionarios abaixo, veja a
+utilização da cláusula SELECT<br>
+
+
+**Seleções:**  /*criar codigo do banco ded dados funcionarios /8
+
+-Selecionar quantas pessoas existem cadastradas:
+
+**SELECT COUNT(*) FROM** funcionarios;<br>
+-Selecionar quantos funcionários existem no departamento 3:<br>
+**SELECT COUNT(*) FROM** funcionarios WHERE depto=3;<br>
+-Selecionar o nome e o rg dos funcionários que ganham mais
+que 3000 reais.<br>
+[SELECT nome, rg FROM funcionarios WHERE
+salario>3000;
+COMANDO INSERT
+Adiciona um ou vários registros a uma tabela.
+Sintaxe básica:
+INSERT INTO destino [(campo1[, campo2[, ...]])]
+VALUES (valor1[, valor2[, ...])
+A instrução INSERT INTO possuí as partes abaixo:
+Destino- O nome da tabela em que os registros devem ser
+anexados.
+campo1, campo2 - Nomes dos campos aos quais os dados
+devem ser inseridos.
+valor1, valor2 - Valores para inserir nos campos específicados
+do novo registro. Cada valor é inserido no campo que corresponde
+à posição do valor na lista: Valor1 é inserido no campo1 do novo
+registro, valor2 no campo2 e assim por diante. Você deve separar
+os valores com uma vírgula e colocar os campos de textos entre
+aspas (" ").
