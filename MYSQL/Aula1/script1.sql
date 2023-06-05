@@ -1,7 +1,7 @@
 /**
  * Fundamentos do banco de dados MySQL - Aula 1
  * Projeto: Agenda de Contatos
- * @author Professor Michelle de Souza 
+ * @author Professora Michelle de Souza 
  */
 
 /*
