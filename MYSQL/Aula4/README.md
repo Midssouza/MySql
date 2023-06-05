@@ -25,11 +25,9 @@ Para desenvolver este tipo de relacionamento (N : N) no banco de dados devemos c
 ![N:N](https://github.com/professorjosedeassis/mysql/blob/master/imagens/aulaead%20NN%202%20forma.png)
 
 ___
-## Atividade 1 - infoX
-Execute os passos 3 e 4 do projeto infox.
 
-[infox](https://github.com/professorjosedeassis/mysql/blob/master/infox/README.md)
-## Atividade 2 - Lojinha
+
+## Atividade  - Lojinha
 Desenvolva o projeto do banco de dados de um E-Commerce, conforme modelo abaixo.
 
 ![N:N](https://github.com/professorjosedeassis/mysql/blob/master/imagens/lojinha.png)
