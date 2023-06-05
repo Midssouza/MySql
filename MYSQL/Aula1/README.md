@@ -36,5 +36,6 @@ ferramentas administrativas e diversas interfaces de programação
 
 [![Introdução ao banco de dados](https://github.com/professorjosedeassis/mysql/blob/master/imagens/intro_banco.png)](https://professorjosedeassis.github.io/mysql/ "Assistir apresentação")
 
-
+## Atividade  - Criar um banco de dados
+Analise o '_script1.sql_' desta aula e use a ferramenta Workbench para criar um banco de dados de nome dbagenda.
 

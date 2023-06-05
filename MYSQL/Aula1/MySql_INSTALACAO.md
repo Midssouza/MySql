@@ -7,5 +7,3 @@ Instalação do MySQL no Windows (ambiente de desenvolvimento)
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/iYN9a3i2qkQ?style=social)
 
-## Atividade 2 - Criar um banco de dados
-Analise o '_script1.sql_' desta aula e use a ferramenta Workbench para criar um banco de dados de nome dbagenda.
